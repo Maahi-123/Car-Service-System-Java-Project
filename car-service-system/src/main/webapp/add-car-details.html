@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Car Details</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url('https://static.vecteezy.com/system/resources/previews/023/977/561/non_2x/front-view-dark-silhouette-of-a-modern-sport-black-car-isolated-on-black-background-ai-generated-free-photo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 450px;
+      color: white;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #00ffcc;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      padding: 10px 0;
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .submit-row {
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    input[type="submit"] {
+      padding: 12px 24px;
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00ccaa;
+    }
+
+    @media (max-width: 500px) {
+      form {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form action="/car-service-system/AddCarDetails">
+    <h2>Add Car Details</h2>
+    <table>
+      <tr>
+        <td><label for="carModel">Car Model:</label></td>
+        <td><input type="text" id="carModel" name="carModel" required/></td>
+      </tr>
+
+      <tr>
+        <td><label for="carType">Car Type:</label></td>
+        <td><input type="text" id="carType" name="carType" required/></td>
+      </tr>
+
+      <tr>
+        <td><label for="carRegistrationNumber">Car Registration Number:</label></td>
+        <td><input type="text" id="carRegistrationNumber" name="carRegistrationNumber" required/></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="submit-row"><input type="submit" value="Add Car Details" /></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

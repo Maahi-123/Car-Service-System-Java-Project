@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Check Car Service Status</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url('https://static.vecteezy.com/system/resources/previews/023/977/561/non_2x/front-view-dark-silhouette-of-a-modern-sport-black-car-isolated-on-black-background-ai-generated-free-photo.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .status-container {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 400px;
+      width: 100%;
+      color: #fff;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .status-container h2 {
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+      color: #00ffcc;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      text-align: left;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    input[type="text"] {
+      padding: 10px 12px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background-color: #00ffcc;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 1rem;
+      color: #000;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00ccaa;
+    }
+
+    @media (max-width: 480px) {
+      .status-container {
+        padding: 20px;
+      }
+
+      .status-container h2 {
+        font-size: 1.5rem;
+      }
+
+      input[type="text"], input[type="submit"] {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="status-container">
+    <h2>Check Car Service Status</h2>
+    <form action="/car-service-system/CheckStatus">
+      <label for="carRegistrationNumber">Car Registration Number</label> 
+      <input type="text" id="carRegistrationNumber" name="carRegistrationNumber" required /> 
+      <input type="submit" value="Check Status" />
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Car Service</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://static.vecteezy.com/system/resources/previews/023/977/561/non_2x/front-view-dark-silhouette-of-a-modern-sport-black-car-isolated-on-black-background-ai-generated-free-photo.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Overlay for better readability */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .container h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .container a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #007BFF, #00BFFF);
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .container a:hover {
+      background: linear-gradient(135deg, #0056b3, #0099cc);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .container h1 {
+        font-size: 1.8em;
+      }
+
+      .container a {
+        display: block;
+        margin: 12px auto;
+        width: 100%;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Car Service System</h1>
+    <a href="/car-service-system/admin-login.html">ADMIN</a>
+    <a href="/car-service-system/customer-register.html">CUSTOMER</a>
+  </div>
+</body>
+</html>
